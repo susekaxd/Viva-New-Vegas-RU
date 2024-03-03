@@ -632,7 +632,6 @@ h2 {
   #sidenavLeft {
     width: 0;
     overflow-x: hidden;
-    position: fixed;
     background-color: rgb(44, 44, 44) !important;
     box-shadow: 5px 0 20px hsla(0, 0%, 0%, 0.8);
   }
