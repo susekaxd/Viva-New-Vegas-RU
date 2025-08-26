@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/Coco/Head Logo.webp">
 
-    <title>Initial Setup | Viva New Vegas</title>
+    <title>Установка игры | Viva New Vegas</title>
 
     <meta name="keywords" content="
     Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
@@ -17,7 +17,7 @@
     Wabbajack, WJ, Installer,
     Mod Manager, Mod Organizer, MO2,
     Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
-    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout New Vegas, Fallout NV, New Vegas, FNV,
     Fallout 4, FO4,
     Tale of Two Wastelands, TTW,
     Skyrim Special Edition, Skyrim SE, SSE">
@@ -28,8 +28,8 @@
     <meta property="og:site_name" content="ModdingLinked">
     <meta property="og:title" content="Viva New Vegas">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
-    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
+    <meta property="og:url" content="https://susekaxd.github.io/Viva-New-Vegas-RU/">
+    <meta property="og:image" content="https://susekaxd.github.io/Viva-New-Vegas-RU/img/others/card.webp">
     <meta property="og:description" content="Clean install and initial launch of the vanilla game.">
 
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333230">
@@ -79,15 +79,15 @@
         <div class="sidebar left-sidebar">
             <p class="pageLinks">
                 <a href="./index.html" title="Home">
-                    Home
+                    Главная
                 </a>
 
                 <a href="./intro.html" title="Introduction">
-                    Introduction
+                    Введение
                 </a>
 
                 <a href="./setup.html" title="Setup">
-                    Setup
+                    Установка игры
                 </a>
 
                 <a href="./mo2.html" title="MO2">
@@ -95,51 +95,51 @@
                 </a>
 
                 <a href="./utilities.html" title="Utilities">
-                    Utilities
+                    Утилиты
                 </a>
 
                 <a href="./bugfix.html" title="Bug Fixes">
-                    Bug Fixes
+                    Багфиксы
                 </a>
 
                 <a href="./basefinish.html" title="Base Finish">
-                    Base Finish
+                    Основа: финал
                 </a>
             </p>
             <hr>
             <p class="pageLinks">
                 <a href="./hud.html" title="User Interface">
-                    User Interface
+                    Интерфейс
                 </a>
                 <a href="./content.html" title="Content">
-                    Content
+                    Доп. контент
                 </a>
                 <a href="./gameplay.html" title="Gameplay">
-                    Gameplay
+                    Игровой процесс
                 </a>
                 <a href="./visuals.html" title="Visuals">
-                    Visuals
+                    Визуальные моды
                 </a>
                 <a href="./finish.html" title="Extended Finish">
-                    Extended Finish
+                    VNVE: финал
                 </a>
             </p>
             <hr>
             <p>
                 <a href="./changelog.html" title="Changelog">
-                    Changelog
+                    Чейнджлог
                 </a>
 
                 <a href="./resources.html" title="Resources">
-                    Resources
+                    Полезные источники
                 </a>
 
                 <a href="./lod.html" title="LOD Guide" class="sublink">
-                    LOD Guide
+                    Гайд по LOD
                 </a>
 
                 <a href="./decompress.html" title="Decompression Guide" class="sublink">
-                    Decompression Guide
+                    Гайд по декомпрессии
                 </a>
 
                 <a href="./faq.html" title="FAQ">
@@ -147,11 +147,11 @@
                 </a>
 
                 <a href="./avoid-tools.html" title="Tools to Avoid">
-                    Tools to Avoid
+                    🚫Инструменты
                 </a>
 
                 <a href="./avoid-mods.html" title="Mods to Avoid">
-                    Mods to Avoid
+                    🚫Моды
                 </a>
 
                 <a href="./wabbajack.html" title="Wabbajack">
@@ -187,39 +187,39 @@
         <div class="content">
 
             <span id="Preparation" class="section">
-                <h2 onclick="location.href='#Preparation'">Preparation</h2>
+                <h2 onclick="location.href='#Preparation'">Подготовка</h2>
 
                 <div class="card" id="CPPRedists" title="Installing Redistributables">
                     <p>
-                    <h3>Installing VC++ Redistributables</h3>
-                    Most engine mods and tools require latest Visual C++ Redistributables to be installed. We will use an all-in-one package that will install all possible versions.
+                    <h3>Установка библиотек VC++</h3>
+                    Большинство модов для движка и инструментов требуют установки последних версий распространяемых пакетов Visual C++. Мы воспользуемся all-in-one пакетом, который установит все возможные версии.
                     <div class="card-red">
                         <p>
-                            Failure to have latest versions installed will result in an immediate crash when launching the game or modding tools.
+                            Отсутствие последних версий приведет к немедленному сбою при запуске игры или инструментов моддинга.
                             <br>
                             <br>
-                            Please install the redistributables even if you have them installed already, as they are often outdated.
+                            Пожалуйста, установите распространяемые пакеты, даже если они уже установлены, так как они часто устаревают.
                         </p>
                     </div>
                     <ol>
-                        <li>Download <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> from TechPowerUp.</li>
-                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as <b>an administrator</b>.</li>
-                        <li>Restart your PC.</li>
+                        <li>Скачайте <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> с сайта TechPowerUp.</li>
+                        <li>Распакуйте архив и запустите <span class="card-basic">install_all.bat</span> от<b> имени администратора.</b>.</li>
+                        <li>Перезапустите ПК.</li>
                     </ol>
                     </p>
                 </div>
 
                 <div class="card" id="FileExtensions" title="Enabling File Extensions">
                     <p>
-                    <h3>Enabling File Extensions</h3>
-                    Before we start, it is important to enable file extensions in Windows.
+                    <h3>Отображение расширений файлов</h3>
+                    Перед тем как мы установим игру, важно включить отображение расширений файлов в Windows.
                     </p>
                     <p>
-                        By default, File Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable visible file extensions:
+                        По умолчанию, Проводник не будет показывать расширения файлов (такие как .exe, .dll или .esp). Расширения очень важны для следования руководству, поэтому рекомендуется включить их отображение:
                     <ol>
-                        <li>Open File Explorer.</li>
-                        <li>Select the <b>View</b> tab at the top.</li>
-                        <li>Enable <strong>File name extensions</strong> in the <b>Show</b> section.</li>
+                        <li>Откройте Проводник.</li>
+                        <li>Выберите панель <b>Вид</b> вверху.</li>
+                        <li>Поставьте галочку <strong>Расширения имен файлов</strong> в разделе <b>Показать или скрыть</b>.</li>
                         <div class="image-container width-90">
                             <img class="content-img" src="./img/Others/File Extensions.webp" alt="Show file extensions">
                             <div class="resize-overlay expand"></div>
@@ -230,27 +230,27 @@
 
                 <div class="card" id="BaseAddressRandomization">
                     <p>
-                    <h3>Disabling Base Address Randomization</h3>
-                    Base Address Randomization is a security feature in Windows that allows program's starting address to be randomized, which is not the expected behavior in 32-bit programs like Fallout: New Vegas. This <strong>leads to crashes</strong> in a modded game.
+                    <h3>Отключение Base Address Randomization</h3>
+                    Рандомизация базового адреса (Base Address Randomization) — это функция безопасности в Windows, которая позволяет рандомизировать начальный адрес программы, что не является ожидаемым поведением для 32-битных программ, таких как Fallout: New Vegas. Это <strong>приводит к сбоям</strong> в модифицированной игре.
                     <br>
                     <br>
-                    While the feature should be disabled by default, it is still recommended to sanity check if it is disabled:
+                    Хотя эта функция должна быть отключена по умолчанию, всё же рекомендуется проверить, отключена ли она:
                     <ol>
-                        <li>Open <strong>Windows Security</strong> from your <b>Start Menu</b>.</li>
-                        <li>Click on <b>App & browser control</b> in the left sidebar.</li>
-                        <li>Click on <b>Exploit protection settings</b> under <b>Exploit protection</b>.</li>
-                        <li>Ensure <strong>Force randomization for images (Mandatory ASLR)</strong> is set to <strong>Use default (Off)</strong>.</li>
+                        <li>Откройте <strong>Безопасность Windows</strong> из меню <b>Пуск</b>.</li>
+                        <li>Выберите пункт <b>Управление приложениями/браузером</b> на левой боковой панели.</li>
+                        <li>В разделе <b>Защита от эксплойтов</b> выберите <b>Параметры защиты от эксплойтов</b>.</li>
+                        <li>Убедитесь, что параметр <strong>Принудительное случайное распределение для образов (обязательный ASLR)</strong> установлен в значение <strong>Использовать значение по умолчанию (Выключено)</strong>.</li>
                         <div class="card-green">
                             <p>
-                                If you don't want to change the global setting, you can add an exception just for the game:
+                                Если вы не хотите менять глобальные настройки, вы можете добавить исключение только для игры:
                             <ol>
-                                <li>Click on <b>Program settings</b>.</li>
-                                <li>Click on <b>Add program to customize</b>.</li>
-                                <li>Select <b>Add program by name</b>.</li>
-                                <li>Enter <span class="card-basic">FalloutNV.exe</span> in the box and save.</li>
-                                <li>Find the newly created entry on the list and click <b>Edit</b>.</li>
-                                <li>Find <b>Force randomization for images (Mandatory ASLR)</b>.</li>
-                                <li>Check <b>Override system settings</b>, and set the toggle to <b>Off</b>.</li>
+                                <li>Нажмите на <b>Параметры программы</b>.</li>
+                                <li>Нажмите <b>Добавление программы для индивидуальной настройки</b>.</li>
+                                <li>Выберите <b>Добавить имя программы</b>.</li>
+                                <li>Введите в поле <span class="card-basic">FalloutNV.exe</span> и сохраните.</li>
+                                <li>Найдите в списке новую запись и нажмите <b>Редактировать</b>.</li>
+                                <li>Найдите параметр <b>Принудительное случайное распределение для образов (обязательный ASLR)</b>.</li>
+                                <li>Поставьте галочку  <b>Переопределить системные параметры</b>, переключите опцию в положение <b>Откл</b>.</li>
                             </ol>
                             </p>
                         </div>
@@ -260,24 +260,26 @@
             </span>
 
             <span id="Installation" class="section">
-                <h2 onclick="location.href='#Installation'">Installation</h2>
+                <h2 onclick="location.href='#Installation'">Установка</h2>
 
                 <div class="card" id="InstallLocation">
                     <p>
-                    <h3>Choosing a Location</h3>
-                    <strong>A clean installation</strong> is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game:
+                    <h3>Выбор места установки</h3>
+                    <strong>Чистая установка</strong> требуется не только для того, чтобы избавиться от следов установленных ранее модификаций, но и для того чтобы игра была установлена в безопасном месте. Вещи на которые нужно ориентироваться при выборе места установки:
                     <br>
                     <ul>
                         <li>
-                            <b>Avoid any default Windows folders</b>: This includes but is not limited to <span class="card-basic">C:\Program Files</span>, <span class="card-basic">C:\Program Files x86</span>, your <span class="card-basic">Desktop</span> and your <span class="card-basic">Documents</span> folders.
+                            <b>Избегайте любых системных папок Windows:</b>: В частности, это такие папки как <span class="card-basic">C:\Program Files</span>, <span class="card-basic">C:\Program Files (x86)</span>, ваша папка <span class="card-basic">Рабочий стол</span> и папка <span class="card-basic">Документы</span>.
+
+
                             <br>
-                            This is because users lack write access to Program Files, while Desktop and Documents are often managed by OneDrive. This can cause many issues with the game and any modding tools.
+                              Это связано с тем, что пользователи не имеют доступа на запись в Program Files, в то время как Рабочий стол и Документы часто управляются OneDrive. Это может вызвать множество проблем с игрой и любыми инструментами для моддинга.
                             <br>
                             <br>
-                            An example of a safe location is <span class="card-basic">C:\Games</span>
+                            Пример безопасного места установки: <span class="card-basic">C:\Games</span>
                         </li>
                         <li>
-                            <b>Install on an SSD if possible</b>: Having the game on an SSD will drastically improve loading times and decrease stuttering.
+                            <b>По возможности установите игру на SSD</b>: Размещение игры на SSD значительно сократит время загрузки и уменьшит статтеры.
                         </li>
                     </ul>
                     </p>
@@ -285,15 +287,15 @@
 
                 <div class="card" id="Uninstall">
                     <p>
-                    <h3>Uninstalling the Games</h3>
+                    <h3>Удаление игры</h3>
 
                     <div class="card-green">
                         <p>
-                            If you never installed the games before, go directly to the next section.
+                            Если вы никогда прежде не устанавливали игру, пропустите эту часть.
                         </p>
                     </div>
 
-                    As the games are available on Steam, GOG, and Epic Games, there are separate instructions for each version. You obviously only need to follow the directions for the versions you have.
+                    Поскольку игра доступна в Steam, GOG и Epic Games, здесь представлены отдельные инструкции для каждой версии.
                     <div class="expander-top colors-steam clickable width-90" onclick="expandCard(this, uninstallSteamExpander)" id="uninstallSteam">
                         <p>
                         <h3>Steam</h3>
@@ -305,16 +307,16 @@
 
                         <div class="card-red">
                             <p>
-                                If you already uninstalled the games, make sure to follow step 4 and 5 to ensure there are no leftovers.
+                                Если вы уже удалили игру, следуйте пунктам 4 и 5, чтобы убедиться, что не осталось старых файлов.
                             </p>
                         </div>
 
                         <ol>
-                            <li>Open Steam and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                            <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
-                            <li>Navigate to <span class="card-basic">Steam\steamapps\common</span> and, if present, delete the <strong>Fallout New Vegas</strong> folder.</li>
-                            <li>Navigate to <span class="card-basic">Documents\My Games\FalloutNV</span> and delete all INI files inside it.</li>
+                            <li>Откройте Steam и зайдите в <strong>Библиотеку</strong>.</li>
+                            <li>Найдите <strong>Fallout: New Vegas</strong> в списке игр.</li>
+                            <li>Нажмите правой кнопкой мыши по ней, выберите <strong>Управление</strong> -> <strong>Удалить с устройства</strong>.</li>
+                            <li>Откройте папку <span class="card-basic">Steam\steamapps\common</span>и, если она есть, удалите папку <strong>Fallout New Vegas</strong> (<strong>Fallout New Vegas enplczru</strong> для региональной версии).</li>
+                            <li>Затем откройте папку <span class="card-basic">Documents\My Games\FalloutNV</span> и удалите все INI файлы.</li>
                         </ol>
                     </div>
 
@@ -327,13 +329,13 @@
 
                     <div class="expander-bottom colors-gog width-90" id="uninstallGogExpander">
                         <ol>
-                            <li>Open GOG and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                            <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
+                            <li>Откройте GOG и перейдите в <strong>Библиотеку</strong>.</li>
+                            <li>Найдите <strong>Fallout: New Vegas</strong> в списке игр.</li>
+                            <li>Нажмите правой кнопкой мыши на нее и выберите <strong>Управление установкой -> Удаление</strong>.</li>
                             <ul>
-                                <li>If you used an offline installer then run the <strong>unins000.exe</strong> file in the game's <b>Root</b> folder.</li>
+                                <li>Если вы использовали оффлайн-установщик запустите <strong>unins000.exe</strong> внутри <b>Корневой</b> папки.</li>
                             </ul>
-                            <li>Navigate to <span class="card-basic">Documents\My Games\FalloutNV</span> and delete all INI files inside it.</li>
+                            <li>Откройте папку <span class="card-basic">Documents\My Games\FalloutNV</span> и удалите все INI файлы.</li>
                         </ol>
                     </div>
 
@@ -348,15 +350,15 @@
 
                         <div class="card-red">
                             <p>
-                                If you already uninstalled the games, make sure to follow step 4 to ensure there are no leftovers.
+                                Если вы уже удалили игру, следуйте пункту 4, чтобы убедиться, что не осталось старых файлов.
                             </p>
                         </div>
 
                         <ol>
-                            <li>Open the Epic Games Launcher and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                            <li>Click on 3 dots and select uninstall from the menu.</li>
-                            <li>Navigate to <span class="card-basic">Documents\My Games\FalloutNV_Epic</span> and delete all INI files inside it.</li>
+                            <li>Откройте Epic Games Launcher и перейдите в <strong>Библиотеку</strong>.</li>
+                            <li>Найдите <strong>Fallout: New Vegas</strong> в списке игр.</li>
+                            <li>Нажмите на 3 точки и выберите удаление в меню.</li>
+                            <li>Откройте папку <span class="card-basic">Documents\My Games\FalloutNV_Epic</span> и удалите все INI файлы.</li>
                         </ol>
                     </div>
 
@@ -365,8 +367,8 @@
 
                 <div class="card" id="Install">
                     <p>
-                    <h3>Installing the Games</h3>
-                    As the games are available on Steam, GOG, and Epic Games, there are separate instructions for each version. You obviously only need to follow the directions for the versions you have.
+                    <h3>Установка игры</h3>
+                    Поскольку игра доступна в Steam, GOG и Epic Games, здесь представлены отдельные инструкции для каждой версии.
                     <div class="expander-top colors-steam clickable width-90" onclick="expandCard(this, installSteamExpander)" id="installSteam">
                         <p>
                         <h3>Steam</h3>
@@ -375,41 +377,41 @@
                     </div>
 
                     <div class="expander-bottom colors-steam width-90" id="installSteamExpander">
-                        <h3>Creating a new Steam library</h3>
+                        <h3>Создание новой библиотеки Steam</h3>
 
                         <div class="card-red">
                             <p>
-                                It is strongly recommended to install the games outside of any default Windows folders (such as <span class="card-basic">Program Files (x86)</span>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders.
+                                Настоятельно рекомендуется устанавливать игры вне любых стандартных папок Windows (таких как <span class="card-basic">Program Files (x86)</span>), поскольку строгие ограничения доступа к файлам в этих папках могут нарушить работу некоторых модов и инструментов. Вместо этого мы используем инструмент Steam Library Setup Tool, чтобы создать новую библиотеку Steam вне стандартных папок Windows.
                                 <br>
                                 <br>
-                                If you already have Steam installed outside of any default windows folders then go directly to step 1 of the next section and install the games to your custom Steam library.
+                                Если у вас уже есть Steam, установленный вне системных папок, следуйте пункту 1 следующего раздела и установите игру в свою библиотеку.
                             </p>
                         </div>
 
                         <ol>
-                            <li>Completely exit out of Steam using Task Manager or System Tray.</li>
-                            <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases" target="_blank">here</a>.</li>
-                            <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
-                            <li>Type the chosen path under <strong>Path</strong>, e.g. <span class="card-basic">C:\Games\Steam</span></li>
-                            <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
-                            <li>The tool will ask to exit, select <strong>OK</strong>.</li>
+                            <li>Полностью закройте Steam через Диспетчер задач или системный трей.</li>
+                            <li>Скачайте файл <strong>steam_library_setup_tool-3.2.exe</strong> <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases" target="_blank">отсюда</a>.</li>
+                            <li>После скачивания запустите файл и добавьте новую запись, нажав <strong>Add Row</strong>.</li>
+                            <li>Введите выбранный путь в поле <strong>Path</strong>, например: <span class="card-basic">C:\Games\Steam</span></li>
+                            <li>Нажмите <strong>Accept</strong>, а затем <strong>Yes</strong>, если появится запрос на создание новой папки.</li>
+                            <li>Программа предложит выйти, выберите <strong>OK</strong>.</li>
                             <div class="image-container width-90">
                                 <img class="content-img" src="./img/Others/Steam Library Tool Setup.webp" alt="Steam library setup tool">
                                 <div class="resize-overlay expand"></div>
                             </div>
                         </ol>
                         <ol>
-                            <li>Open Steam and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
-                            <li>Under <strong>Install to:</strong>, select the library folder created with the tool, which is the second <b>C:\</b> entry if you are installing on the main drive.</li>
+                            <li>Откройте Steam и перейдите в <strong>Библиотеку</strong>.</li>
+                            <li>Найдите <strong>Fallout: New Vegas</strong> в списке игр и нажмите <strong>Установить</strong>.</li>
+                            <li>Под надписью <strong>Установить на:</strong>, выберите папку библиотеки,  созданную с помощью программы - это второй пункт с указанием диска <b>C:\</b>, если вы устанавливаете игру на основной диск.</li>
                             <div class="image-container width-90">
                                 <img class="content-img" src="./img/Others/Steam Location Pick.webp" alt="Example Steam install locations">
                                 <div class="resize-overlay expand"></div>
                             </div>
-                            <li>Select <strong>Next</strong> then wait for the install to finish.</li>
+                            <li>Нажмите <strong>Установить</strong> и ожидайте конца установки.</li>
                         </ol>
                         <div class="card-yellow">
-                            <p>If you still do not see your new library, restart your PC.</p>
+                            <p>Если вы все еще не видите новую библиотеку, перезагрузите ПК.</p>
                         </div>
                     </div>
 
@@ -424,11 +426,11 @@
 
                     <div class="expander-bottom colors-gog width-90" id="installGogExpander">
                         <ol>
-                            <li>Open GOG and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
-                            <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+                            <li>Откройте GOG и перейдите в <strong>Библиотеку</strong>.</li>
+                            <li>Найдите <strong>Fallout: New Vegas</strong> в списке игр и выберите <strong>Установить</strong>.</li>
+                            <li>Выберите папку для установки по вашему желанию.</li>
                             <ul>
-                                <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <span class="card-basic">Program Files x86</span>).</li>
+                                <li><strong>Необходимо</strong> установить игру вне стандартных папок Windows (таких как <span class="card-basic">Program Files x86</span>).</li>
                             </ul>
                         </ol>
                     </div>
@@ -442,11 +444,11 @@
 
                     <div class="expander-bottom colors-epic width-90" id="installEpicExpander">
                         <ol>
-                            <li>Open the Epic Games Launcher and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                            <li>Click on the game to install it.</li>
+                            <li>Откройте Epic Games Launcher и перейдите в <strong>Библиотеку</strong>.</li>
+                            <li>Найдите <strong>Fallout: New Vegas</strong> в списке игр.</li>
+                            <li>Нажмите на игру для установки.</li>
                             <ul>
-                                <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <span class="card-basic">Program Files x86</span>).</li>
+                                <li><strong>Необходимо</strong> установить игру вне стандартных папок Windows (таких как <span class="card-basic">Program Files x86</span>).</li>
                             </ul>
                         </ol>
                     </div>
@@ -455,47 +457,55 @@
             </span>
 
             <span id="PostInstallation" class="section">
-                <h2 onclick="location.href='#PostInstallation'">Post-Installation</h2>
+                <h2 onclick="location.href='#PostInstallation'">После завершения установки</h2>
 
                 <div class="card" id="Terminology">
                     <p>
-                    <h3>Key Terminology</h3>
-                    Now that the game is installed, there are two folders from it that will be referred to in the guide often:
+                    <h3>Ключевая терминология</h3>
+                    Теперь, когда игра установлена, есть две папки, на которые мы будем часто ссылаться в этом руководстве:
                     <ul>
-                        <li><strong>Root</strong> folder: Where the game is installed.</li>
+                        <li><strong>Корневая</strong> папка: То, куда установлена игра.</li>
                         <ul>
-                            <li>For Steam:
+                            <li>Для Steam:
                                 <div class="card-basic">
                                     <p>Steam\steamapps\common\Fallout New Vegas</p>
                                 </div>
+                                Для региональной версии:
+                                <div class="card-basic">
+                                    <p>Steam\steamapps\common\Fallout New Vegas enplczru</p>
+                                </div>
                             </li>
-                            <li>For GOG:
+                            <li>Для GOG:
                                 <div class="card-basic">
                                     <p>GOG Galaxy\Games\Fallout New Vegas</p>
-                                </div> (unless you manually changed the installation path).
+                                </div> (если вы не меняли путь установки вручную).
                             </li>
                             <li>For Epic Games:
                                 <div class="card-basic">
                                     <p>Epic Games\FalloutNewVegas\Fallout New Vegas English</p>
-                                </div> (unless you manually changed the installation path).
+                                </div> (если вы не меняли путь установки вручную).
                             </li>
                         </ul>
                     </ul>
 
                     <ul>
-                        <li><strong>Data</strong> folder: Where all of the game's assets are located.</li>
+                        <li>Папка <strong>Data</strong>: Там, где хранятся ресурсы игры.</li>
                         <ul>
                             <li>For Steam:
                                 <div class="card-basic">
                                     <p>Steam\steamapps\common\Fallout New Vegas\Data</p>
                                 </div>
+                                Для региональной версии:
+                                <div class="card-basic">
+                                    <p>Steam\steamapps\common\Fallout New Vegas enplczru\Data</p>
+                                </div>
                             </li>
-                            <li>For GOG:
+                            <li>Для GOG:
                                 <div class="card-basic">
                                     <p>GOG Galaxy\Games\Fallout New Vegas\Data</p>
                                 </div>
                             </li>
-                            <li>For Epic Games:
+                            <li>Для Epic Games:
                                 <div class="card-basic">
                                     <p>Epic Games\FalloutNewVegas\Fallout New Vegas English\Data</p>
                                 </div>
@@ -506,21 +516,21 @@
                 </div>
                 <div class="card" id="GeneratingINIs" title="Generating INIs">
                     <p>
-                    <h3>Generating Fresh INI Files</h3>
+                    <h3>Генерация новых INI-файлов</h3>
                     <ol>
-                        <li>Run the game from Steam/GOG Galaxy, or through FalloutNVLauncher.exe in the game files if you are using an offline copy.</li>
-                        <li>Click OK to both pop-ups that say <b>Detecting Video Hardware</b>.</li>
+                        <li>Запустите игру из Steam/GOG Galaxy, или через FalloutNVLauncher.exe в папке игры если вы используете оффлайн-копию.</li>
+                        <li>Нажмите OK в обоих всплывающих окнах, которые говорят <b>Detecting Video Hardware</b>.</li>
                         <ul>
-                            <li>If there aren't any pop-ups, navigate to <span class="card-basic">Documents\My Games\FalloutNV</span> and delete all INI files, then retry.</li>
+                            <li>Если не было всплывающих окон, откройте папку <span class="card-basic">Documents\My Games\FalloutNV</span> и удалите все INI файлы, затем попробуйте еще раз.</li>
                         </ul>
-                        <li>Click <b>OK</b> then <b>Exit</b>.</li>
+                        <li>Нажмите <b>OK</b> then <b>Exit</b>.</li>
                     </ol>
                     </p>
                 </div>
                 <div class="card-wj" id="WabbajackReturn" title="Return To The WJ Page">
                     <p>
-                    <h3>Wabbajack Users!</h3>
-                    You are done with the Introduction and Setup of the guide, go back to the <a href="./wabbajack.html#Installation">Wabbajack page</a> to continue installing the list with it!
+                    <h3>Пользователи Wabbajack!</h3>
+                    Если вы справились с Введением и Установкой, возвращайтесь на <a href="./wabbajack.html#Installation">страницу Wabbajack</a>, чтобы продолжить установку модов с помощью него!
                     </p>
                 </div>
             </span>
