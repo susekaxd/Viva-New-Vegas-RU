@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     Wabbajack, WJ, Installer,
     Mod Manager, Mod Organizer, MO2,
     Fallout, The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS,
-    Fallout New Vegas, Fallout NV, New Vegas, FNV, 
+    Fallout New Vegas, Fallout NV, New Vegas, FNV,
     Fallout 4, FO4,
     Tale of Two Wastelands, TTW,
     Skyrim Special Edition, Skyrim SE, SSE">
@@ -191,47 +191,47 @@
                 <div class="card" id="WhatIsMO2" title="What is MO2?">
                     <p>
                     <h3>What is Mod Organizer 2?</h3>
-                    Mod Organizer 2 (MO2) is an open source game mod manager, mainly used for Bethesda games. Its main features are:
+                    Mod Organizer 2 (MO2) - это менеджер модов с открытым исходным кодом, в основном используемый для игр Bethesda. Основные преимущества MO2:
                     <ul>
                         <li>
-                            <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from. This allows for:
+                            <strong>Виртуальная файловая система (USVFS)</strong>: MO2 не устанавливает моды напрямую в папку игры, а создает виртуальную файловую систему, из которой игра и читает данные. Это позволяет:
                             <ul>
-                                <li>Safe mod installation and uninstallation,</li>
-                                <li>Being able to modify mod install order at any point,</li>
-                                <li>Having multiple profiles with different mod setups,</li>
-                                <li>Keeping original game files clean.</li>
+                                <li>Безопасно устанавливать и удалять моды.</li>
+                                <li>Изменять очередность установки модов.</li>
+                                <li>Иметь несколько профилей с различными наборами модов.</li>
+                                <li>Сохранять игровые файлы в чистоте.</li>
                             </ul>
-                            The <b>downsides</b> to USVFS are:
+                            Но у USVFS есть и <b>недостатки</b>:
                             <ul>
-                                <li>Mods installed through MO2 are "visible" only to programs launched using MO2,</li>
-                                <li>Some programs may not work properly with MO2's virtual filesystem,</li>
-                                <li>USVFS can cause performance overhead if you have tons of loose (not-BSA/BA2) files,</li>
-                                <li>USVFS works by "hooking" into the game (similarly to mods such as NVSE plugins, ReShade, etc.). This method can be considered as unsafe by some antivirus software due to its memory-invasive nature.</li>
+                                <li>Моды, установленные через MO2, "видны" только приложениям, запущенным через сам MO2.</li>
+                                <li>Некоторые приложения могут некорректно работать с виртуальной файловой системой.</li>
+                                <li>USVFS может вызывать снижение производительности, если у вас огромное количество распакованных файлов (не в архивах BSA).</li>
+                                <li>USVFS работает путем "внедрения" в игру (аналогично таким модам, как плагины NVSE, ReShade и т.д.). Некоторые антивирусы могут посчитать это небезопасным, поскольку производится вмешательство в системную память.
                             </ul>
                         </li>
                         <li>
-                            <strong>Profile System</strong>: MO2 allows you to create multiple profiles with different mod setups, saves, and settings.
+                            <strong>Система профилей</strong>: MO2 позволяет создать несколько профилей с различными наборами модов, сохранений и настроек.
                         </li>
                         <li>
-                            <strong>Two pane interface</strong>: MO2 is split into two sides, the left side is the modlist and the right side is the plugin list. This allows for easy conflict resolution and mod management.
+                            <strong>Двухпанельный интерфейс</strong>: Интерфейс MO2 разделён на две части — слева находится список модов, а справа список плагинов. Это обеспечивает простое разрешение конфликтов и управление модами.
                         </li>
                         <li>
-                            <strong>Portability</strong>: Thanks to the use of USVFS, MO2 has a "portable" mode that allows you to move the entire MO2 folder to another location with minimal setup.
+                            <strong>Портативность</strong>: Благодаря USVFS, MO2 имеет "портативный" режим, который позволяет переместить всю папку MO2 в другое место с минимальными усилиями по настройке.
                         </li>
                         <li>
-                            <strong>Modding Community Integration</strong>: MO2 has built-in support for Nexus Mods, allowing you to download mods directly from the Nexus.
+                            <strong>Интеграция с сообществом</strong>: MO2 имеет встроенную поддержку Nexus Mods, что позволяет скачивать моды прямо из Nexus.
                             <br>
-                            It also has a plugin system that allows for creation of custom plugins to extend its functionality.
+                            Кроме того, MO2 имеет систему плагинов, которая позволяет создавать пользовательские расширения для добавления новых функций.
                             <div class="card-yellow">
                                 <p>
-                                    Mod Organizer 2 has <b>NO</b> support for Nexus' Collections feature, so you will have to download mods one by one.
+                                    Mod Organizer 2 <b>НЕ ИМЕЕТ</b> поддержки Коллекций Nexus (Nexus' Collections), так что вам придется скачивать моды вручную.
                                     <br>
-                                    This is not a big issue, as the guide will provide direct links to the mods you need, and most collections are low quality and not curated.
+                                    Это не является большой проблемой, так как руководство предоставляет прямые ссылки на необходимые моды, к тому же большинство коллекций имеют низкое качество и не курируются.
                                     <hr>
-                                    The closest alternative to Collections is <a href="https://www.wabbajack.org/">Wabbajack</a>, which is a community-made modlist installer that can install entire modlists with a single click. Due to its higher bar of entry for modlist creators, Wabbajack lists tend to be of higher quality compared to Collections.
+                                    Ближайшей альтернативой Коллекциям является <a href="https://www.wabbajack.org/">Wabbajack</a> — созданный сообществом установщик, который позволяет устанавливать целые модлисты одним щелчком мыши. Из-за более высокого порога входа для создания модлистов, они, как правило, отличаются более высоким качеством по сравнению с Коллекциями.
                                     <br>
                                     <br>
-                                    You can find all instructions on how to install the official Viva New Vegas Wabbajack list <a href="./wabbajack.html" target="_blank">here</a>.
+                                    Вы можете найти все инструкции по установке официального модлиста Viva New Vegas через Wabbajack <a href="./wabbajack.html" target="_blank">здесь</a>.
                                 </p>
                             </div>
                         </li>
@@ -242,29 +242,29 @@
                 <div class="card" id="WhyMO2" title="Why MO2?">
                     <p>
                     <h3>Why Mod Organizer 2?</h3>
-                    Mod Organizer 2 has been chosen for our guides due to its <strong>ease of use</strong> and its ability to keep the <strong>game's folder clean</strong>. This is important because it allows for easy conflict resolution and mod management, and makes correcting mistakes trivial - installed mods in the wrong order? Just drag them into the correct position!
+                    Mod Organizer 2 был выбран как менеджер модов для наших руководств благодаря его <strong>простоте в использовании</strong> и способности держать <strong>файлы игры в чистоте</strong>.   Это важно, потому что это позволяет легко устранять конфликты и управлять модами, а также упрощает исправление ошибок - моды установлены в неправильном порядке? Просто перетащите их в нужное положение!
                     <br>
                     <br>
-                    Compared to Vortex, MO2 doesn't hide the most important parts of modding from the user, making it easier to understand what is happening and why, albeit at the cost of potentially looking scary at first.
+                    По сравнению с Vortex, MO2 не скрывает от пользователя самые важные аспекты моддинга, что облегчает понимание того, что происходит и почему, - правда, ценой пугающего на первых порах интерфейса.
                     <br>
                     <br>
-                    That said, we are well aware that MO2 is not perfect, and it has its own set of issues and limitations, but it is the best tool for the job.
+                    Как уже было сказано, мы в курсе, что MO2 не идеален и у него есть свой набор проблем и ограничений, но он все еще является лучшим инструментом для наших целей.
                     </p>
                 </div>
             </span>
 
             <span id="Installation" class="section">
-                <h2 onclick="location.href='#Installation'">Installation</h2>
+                <h2 onclick="location.href='#Installation'">Установка</h2>
 
                 <div class="card" id="InstallingMO2" title="Installing MO2">
                     <p>
-                    <h3>Installing Mod Organizer 2</h3>
+                    <h3>Установка Mod Organizer 2</h3>
                     <ol>
-                        <li><strong>Download Mod Organizer 2</strong> from <a href="https://www.nexusmods.com/site/mods/874" target="_blank">here</a>.</li>
-                        <li>Once the download has finished, run the installer.</li>
-                        <li>Accept the license, click <b>Next</b>.</li>
+                        <li><strong>Загрузите Mod Organizer 2</strong> <a href="https://www.nexusmods.com/site/mods/874" target="_blank">отсюда</a>.</li>
+                        <li>Когда загрузка завершится, запустите установщик.</li>
+                        <li>Примите лицензионное соглашение и нажмите <b>Next</b>.</li>
                         <li>
-                            When asked about the install location, change <span class="card-basic">MO2</span> to <span class="card-basic">Viva New Vegas</span> and click <b>Next</b>.
+                            При запросе места установки, измените <span class="card-basic">M</span> на <span class="card-basic">Viva New Vegas</span> и нажмите <b>Next</b>.
                             <br>
                             <div class="image-container width-40">
                                 <img class="content-img" src="img/MO2/Install Path.webp" alt="Change folder name to Viva New Vegas">
@@ -272,33 +272,34 @@
                             </div>
                             <div class="card-green">
                                 <p>
-                                    If you wish to install Mod Organizer 2 in a different location, you can do so by clicking the <b>Browse</b> button and selecting a different folder.
+                                    Если вы хотите установить Mod Organizer 2 в другое место, вы можете сделать это, нажав кнопку <b>Browse</b> и выбрав другую папку.
                                     <br>
                                     <br>
-                                    The folder <u>MUST</u> be outside of the default Windows folders (such as <span class="card-basic">Program Files x86</span>) and outside of the game's <b>Root</b> folder.
+                                    Папка <u>должна</u> находиться вне системных папок Windows (таких как <span class="card-basic">Program Files x86</span>) и вне <b>Корневой</b> папки игры.
                                     <br>
                                     <br>
-                                    It's discouraged to store MO2 on Desktop or Documents if you use OneDrive or similar cloud providers, due to potential issues and degraded performance.
+                                    Не рекомендуется хранить MO2 на «Рабочем столе» или в «Документах», если вы используете OneDrive или аналогичные облачные сервисы, из-за возможных проблем и снижения производительности.
                                 </p>
                             </div>
                         </li>
-                        <li>On the install components page, use defaults.</li>
+                        <li>На странице выбора компонентов оставьте все по умолчанию.</li>
                         <li>
-                            When asked about the Start Menu folder, change <span class="card-basic">Mod Organizer</span> to <span class="card-basic">Viva New Vegas</span> and click <b>Next</b>.
+                            При запросе папки в меню «Пуск» измените <span class="card-basic">Mod Organizer</span> на <span class="card-basic">Viva New Vegas</span> и нажмите <b>Next</b>.
+
                             <br>
                             <div class="image-container width-40">
                                 <img class="content-img" src="img/MO2/Start Menu.webp" alt="Change the name to Viva New Vegas">
                                 <div class="resize-overlay expand"></div>
                             </div>
                         </li>
-                        <li>Don't create a Desktop shortcut - we will create our own later.</li>
-                        <li>On the final page, click <b>Install</b>.</li>
-                        <li>Once the installation is complete, ensure that <strong>Launch Mod Organizer</strong> is ticked and click <b>Finish</b>.</li>
+                        <li>Не создавайте ярлык на Рабочем столе - мы создатим свой собственный позже.</li>
+                        <li>На последней странице нажмите <b>Install</b>.</li>
+                        <li>По завершению установки поставьте галочку <strong>Launch Mod Organizer</strong> и нажмите <b>Finish</b>.</li>
                     </ol>
 
                     <div class="card-red">
                         <p>
-                            MO2 refuses to open? Try <a href="./faq.html#troubleshootingquestion15">these steps</a> in the FAQ.
+                            MO2 не открывается? Попробуйте следовать <a href="./faq.html#troubleshootingquestion15">этим шагам</a> в FAQ.
                         </p>
                     </div>
 
@@ -311,102 +312,106 @@
 
                 <div class="card" id="Configuration">
                     <p>
-                    <h3>Configuring Mod Organizer 2</h3>
+                    <h3>Настройка Mod Organizer 2</h3>
                     <ol>
-                        <li>On the instance creation page, select <strong>Create a portable instance</strong>, click <b>Next</b>.</li>
+                      <li>На странице создания выберите пункт <strong>Create a portable instance</strong>, затем нажмите <b>Next</b>.</li>
                         <div class="image-container width-40">
                             <img class="content-img" src="./img/MO2/Instance.webp" alt="Select Portable Instance option">
                             <div class="resize-overlay expand"></div>
                         </div>
-                        <li>Select <strong>New Vegas</strong>, click <b>Next</b>.</li>
-                        <li>Select the store where you bought the game, click <b>Next</b>.</li>
-                        <li>When asked about profile settings, <strong>enable all options</strong> and click <b>Next</b>.</li>
-                        <li>Keep the <strong>default location</strong> file path.</li>
-                        <li>Click <strong>Connect to Nexus</strong>.</li>
+                        <li>Выберите <strong>New Vegas</strong>, нажмите <b>Next</b>.</li>
+                        <li>Выберите магазин, в котором вы приобрели игру, нажмите <b>Next</b>.</li>
+                        <li>При запросе настроек профиля, <strong>поставьте все флажки</strong> и нажмите <b>Next</b>.</li>
+                        <li>Оставьте <strong>стандартный путь</strong> установки.</li>
+                        <div class="card-yellow">
+                            <p>
+                                Если MO2 установлен на SSD или HDD с малым объемом свободного места, вы можете установить флажок <strong>Show advanced options</strong> и переместить папку для скачивания модов <strong>Downloads</strong> на другой диск с большим объемом памяти.
+                                <br>
+                                Это не повлияет на скорость загрузки или игры, а загруженные файлы можно будет удалить после установки модов.
+                              </p>
+                        </div>
+                        <li>Нажмите кнопку <strong>Connect to Nexus</strong> для подключения своего аккаунта Nexus Mods.</li>
                     </ol>
 
-                    <div class="card-yellow">
-                        <p>
-                            If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space.
-                            <br>
-                            This will not affect the game's performance, the downloaded files can be deleted after the mods have been installed.
-                        </p>
-                    </div>
+
 
                     <ol start="7">
-                        <li>On the last page, select <b>Finish</b>.</li>
-                        <li>If you see a pop-up called <strong>Show tutorial?</strong>, select <b>No</b>.</li>
-                        <li>If you see a pop-up called <strong>Register?</strong>, select <b>Yes</b>.</li>
-                        <li>If you see a pop-up called <strong>INI file is read-only</strong>, select <b>Remember my choice</b> from the drop-down at the bottom then click <b>Clear the read-only flag</b>.</li>
-                        <li>If you see a pop-up called <strong>FalloutNV_lang.esp was found</strong>, select <b>Yes</b>.</li>
+                        <li>На последней странице нажмите <b>Finish</b>.</li>
+                        <li>Если всплыло окно <strong>Show tutorial?</strong>, выберите пункт <b>No</b>.</li>
+                        <li>Если всплыло окно <strong>Register?</strong>, выберите пункт <b>Yes</b>.</li>
+                        <li>Если всплыло окно <strong>INI file is read-only</strong>, выберите пункт <b>Remember my choice</b> из выпадающего списка внизу, а затем нажмите <b>Clear the read-only flag</b>.</li>
+                        <li>Если всплыло окно <strong>FalloutNV_lang.esp was found</strong>, выберите пункт <b>Yes</b>.</li>
                     </ol>
                     </p>
                 </div>
 
                 <div class="card" id="MO2Settings" title="MO2 Settings">
                     <p>
-                    <h3>Configuring Settings</h3>
+                    <h3>Настройки программы</h3>
                     <ol>
-                        <li>Click the <b>X</b> in the bottom right of MO2 to close the log window.</li>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/Settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
-                        <li>If you wish, you can select a different theme.</li>
-                        <li>In the <b>Nexus</b> tab, select <strong>Connect to Nexus</strong>.</li>
+                        <li>Нажмите на <b>X</b> в правом нижнем углу MO2, чтобы закрыть окно лога.</li>
+                        <li>Нажмите <img class="mo2-icon" src="./img/MO2/Settings.webp" alt="MO2 settings"> кнопку в верхней части интерфейса, чтобы открыть настройки.</li>
+                        <li>Если вы хотите, можете выбрать другую тему.</li>
+                        <li>Во вкладке <b>Nexus</b> нажмите кнопку <strong>Connect to Nexus</strong>.</li>
                         <div class="image-container">
                             <img class="content-img" src="./img/MO2/Connect.webp" alt="Connect to Nexus">
                             <div class="resize-overlay expand"></div>
                         </div>
                     </ol>
                     <div class="card-green">
-                        <p>This option will not show up if you have already connected your Nexus account on a different MO2 instance.</p>
+                        <p>Данная опция не будет отображаться, если вы уже привязали свой аккаунт Nexus в другом instance MO2.</p>
                     </div>
                     <ol start="5">
-                        <li>MO2 will open your browser and prompt you to <strong>authorize</strong> the connection.</li>
-                        <li>Once you authorize it, you can close your browser and of the MO2 settings.</li>
-                        <li>Allow MO2 to <strong>restart</strong>.</li>
+                        <li>MO2 откроет вкладку в браузере и <strong>авторизует</strong> подключение.</li>
+                        <li>После авторизации, вы можете закрыть вкладку и настройки MO2.</li>
+                        <li>Позвольте MO2 <strong>перезагрузиться</strong>.</li>
                     </ol>
                     </p>
                 </div>
                 <div class="card" id="GameSettings">
                     <p>
-                    <h3>Game Settings</h3>
+                    <h3>Настройки игры</h3>
                     <ol>
-                        <li>Open the game launcher using the <strong>Fallout Launcher</strong> option in MO2.</li>
+                        <li>Откройте лаунчер игры используя опцию <strong>Fallout Launcher</strong> в MO2.</li>
+                        <div class="card-yellow">
+                          <p>Если вы пытаетесь запустить игру и натыкаетесь на ошибку <strong>Application load error</strong>, вам необходимо зайти в <b>настройки MO2</b>, сверху нажать на вкладку <b>Workarounds</b> и заменить число в графе <strong>Steam App ID</strong> на <span class="card-basic">22490</span>.
+                        <div>
                         <div class="image-container width-60">
                             <img class="content-img" src="./img/Others/Start Launcher.webp" alt="Run the launcher through MO2">
                             <div class="resize-overlay expand"></div>
                         </div>
                         <li>
-                            Inside the launcher, click <b>Options</b> and do the following:
+                            Внутри лаунчера, нажмите <b>Options</b> и проделайте следующее:
                             <ol>
                                 <li>
-                                    Select the <strong>Ultra Preset</strong>.
+                                    Выберите пресет <strong>Ultra</strong>.
                                     <div class="card-yellow">
                                         <p>
-                                            If you have a very weak PC, you can select the <b>Medium Preset</b> instead.
+                                            Если у вас слабый ПК, вы можете выбрать пресет <b>Medium</b>.
                                         </p>
                                     </div>
                                 </li>
                                 <li>
-                                    Set <strong>Resolution</strong> to your monitor's native resolution.
+                                    Выставьте разрешение в графе <strong>Resolution</strong>, соответствующее разрешению вашего монитора.
                                     <div class="card-yellow">
                                         <p>
-                                            If you can't find the right resolution in the launcher's list, do the following:
+                                            Если вы не можете найти правильное разрешение в списке, выполните следующее:
                                         <ol>
-                                            <li>Close the launcher.</li>
-                                            <li>Click the <img class="mo2-icon" src="./img/MO2/Tools.webp" alt="Tools drop-down"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
-                                            <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
-                                            <li>Change the following settings in the <span class="card-basic">Display</span> section:
+                                            <li>Закройте лаунчер.</li>
+                                            <li>Нажмите на кнопку <img class="mo2-icon" src="./img/MO2/Tools.webp" alt="Tools drop-down"> в верхней части интерфейса и выберите <strong>INI Editor</strong>.</li>
+                                            <li>Выберите вкладку <strong>FalloutPrefs.ini</strong>.</li>
+                                            <li>Измените следующие настройки в разделе <span class="card-basic">Display</span>:
                                                 <br>
-                                                <span class="card-basic">iSize W</span> = your screen width
+                                                <span class="card-basic">iSize W</span> = ширина вашего экрана
                                                 <br>
-                                                <span class="card-basic">iSize H</span> = your screen height
+                                                <span class="card-basic">iSize H</span> = высота вашего экрана
                                             </li>
                                         </ol>
                                         </p>
                                     </div>
                                 </li>
                             </ol>
-                        <li>Close the launcher.</li>
+                        <li>Закройте лаунчер.</li>
                         </li>
                     </ol>
                     </p>
@@ -414,18 +419,18 @@
             </span>
 
             <span id="Instructions" class="section">
-                <h2 onclick="location.href='#Instructions'">Mod Installation Instructions</h2>
+                <h2 onclick="location.href='#Instructions'">Инструкции по установке модов</h2>
 
                 <div class="card" id="HowToUse?">
                     <p>
-                    <h3>How to use Nexus and MO2?</h3>
-                    When the guide says to install a mod, it will be formatted as <strong>Main File - Example 1.5</strong>, this is referring to the mod's category on Nexus and file name.
+                    <h3>Так как же пользоваться Nexus и MO2?</h3>
+                    Когда в руководстве говорится об установке мода, он будет указан в формате <strong>Main File - Example 1.5</strong>, что означает категорию мода на Nexus и название файла.
 
                     <div class="card-yellow">
                         <p>
-                            <b>IMPORTANT</b>:
+                            <b>ВАЖНО</b>:
                             <br>
-                            Unless otherwise specified, always use <b>Mod Manager Download</b>.
+                            Если не указано иное, для скачивания всегда используйте кнопку <b>Mod Manager Download</b>.
                         </p>
                     </div>
 
@@ -435,27 +440,27 @@
                     </div>
                     <br>
                     <br>
-                    <strong>Standard procedure</strong> through the manager:
+                    <strong>Стандартный процесс</strong> скачивания через менеджер:
                     <ol>
-                        <li>Download the indicated file(s).</li>
-                        <li>Open the <b>Downloads</b> tab in MO2 (below the executable selector on the right).</li>
-                        <li>Double-click on the mod to install it.</li>
-                        <li>Enable the mod on the left pane by ticking its checkbox.</li>
+                        <li>Скачайте указанный файл.</li>
+                        <li>Откройте вкладку <b>Downloads</b> в MO2 (справа, прямо под выбором способа запуска).</li>
+                        <li>Дважды щелкните по моду для установки.</li>
+                        <li>Активируйте мод в левой части, установив галочку напротив.</li>
                     </ol>
                     <br>
-                    If downloading through the manager is not an option, do the following:
+                    Если в руководстве указана загрузка НЕ через менеджер, проделайте следующее:
                     <ol>
-                        <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site).</li>
-                        <li>Once the download has finished, click the <img class="mo2-icon" src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
-                        <li>From the new window, navigate to where the file was downloaded to and double-click it.</li>
-                        <li>Finish the install as you would with a <b>Mod Manager Download</b> mod.</li>
+                        <li>Нажмите кнопку <strong>Manual Download</strong> (или ее аналог для сайта, с которого вы хотите загрузить мод).</li>
+                        <li>Когда загрузка завершена, нажмите кнопку <img class="mo2-icon" src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> в верхней части интерфейса MO2.</li>
+                        <li>В новом окне перейдите в папку, куда был скачан файл, и дважды щелкните по нему.</li>
+                        <li>Завершите установку так же, как для мода, загруженного через <b>Mod Manager Download</b>.</li>
                     </ol>
                     <br>
-                    When <strong>installing a mod</strong>, MO2 might prompt you with multiple choices:
+                    Во время <strong>установки мода</strong> может предложить вам несколько вариантов:
                     <ul>
-                        <li><strong>Rename</strong> appears when you are trying to install a file with the same name as an existing one. If you are installing, for example, a secondary file necessary for the mod to work, then rename it accordingly with the name drop-down list or by typing the name manually.</li>
-                        <li>If you are updating from an old version of a mod, you should select <strong>Replace</strong>, this will automatically delete all the files from the old version of the mod and replace them with the ones from the new version.</li>
-                        <li><strong>Merge</strong> should only be used when you are sure the mod will not be updated and in situations where a hotfix is uploaded as separate file. Avoid it if you can, for maximum modularity.</li>
+                        <li>Переименовать (<strong>Rename</strong>) — появляется при попытке установить файл с именем, совпадающим с уже существующим. Если вы устанавливаете, например, дополнительный файл, необходимый для работы мода, переименуйте его соответствующим образом с помощью выпадающего списка или вручную введя название.</li>
+                        <li>Заменить (<strong>Replace</strong>) — следует выбирать при обновлении старой версии мода. Это автоматически удалит все файлы из старой версии и заменит их файлами из новой.</li>
+                        <li>Объединить <strong>Merge</strong> используйте только если уверены, что мод больше не будет обновляться, или когда хотфикс загружен отдельным файлом. По возможности избегайте этого варианта для максимальной модульности.</li>
                     </ul>
                     </p>
                 </div>
