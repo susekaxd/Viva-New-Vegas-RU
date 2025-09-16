@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -186,100 +186,100 @@
 
             <span id="Resources" class="section">
 
-                <h2 onclick="location.href='#ToolsToAvoid'">Tools to Avoid</h2>
+                <h2 onclick="location.href='#ToolsToAvoid'">Инструменты, которые стоит избегать</h2>
                 <div class="card" id="ToolsToAvoid">
                     <p>
                     <h3>Vortex</h3>
-                    Vortex was created around the idea of LOOT managing the load order, making modding seem simple and easy (see below why that's a bad idea).
+                    Vortex был создан вокруг идеи о том, что LOOT будет управлять порядком загрузки модов, что сделает моддинг простым и легким (см. ниже, почему это плохая идея).
                     <br>
-                    While the option to manually order plugins exists, it's designed to be as unintuitive as possible - the user needs to select the position of every plugin from a dropdown menu, based on relative position to other mods (load X after Y, load X before Z), or use a graphical, node based interface.
+                    Хотя возможность ручного упорядочивания плагинов существует, она сделана максимально неинтуитивной: пользователь должен выбирать положение каждого плагина из выпадающего меню, основываясь на относительном положении к другим модам (загрузить X после Y, загрузить X перед Z), или использовать нодовый графический интерфейс.
                     <br>
-                    Additionally, it does not track generated files, and the deployment logic can be confusing to the user.
+                    Кроме того, Vortex не отслеживает сгенерированные файлы, а логика развертывания может сбивать с толку пользователя.
                     <br>
-                    Vortex also cannot easily export a user's mod asset list for troubleshooting. Users can only export their plugin list as a text file, but not their full mod installation order. This makes it extremely difficult to provide mod lists when asking for help, as the only alternatives are taking screenshots while scrolling through the mod list or publishing collections (which sort mods alphabetically, not in installation order).
+                    Vortex также не позволяет легко экспортировать список ресурсов модов для диагностики проблем. Пользователи могут экспортировать только список плагинов в виде текстового файла, но не полный порядок установки модов. Это крайне затрудняет предоставление списков модов при запросе помощи, так как единственными альтернативами являются создание скриншотов при прокрутке списка модов или публикация коллекций (оба метода сортируют моды по алфавиту, а не в порядке установки).
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Nexus Mod Manager/Fallout Mod Manager</h3>
-                    Outdated/abandoned, have no virtual file system or even dynamic movement of mods with loose files, which can lead to complete mod or game reinstalls in case the user wants to change the load order, or installed mods in a wrong order.
+                    Устаревшие/заброшенные менеджеры, не имеющие виртуальной файловой системы или даже динамического перемещения модов с распакованными файлами, что может привести к полной переустановке модов или игры, если пользователь захочет изменить порядок загрузки или установил моды в неправильном порядке.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Mod Organizer 1</h3>
-                    There is no reason to use Mod Organizer 1 over Mod Organizer 2.
+                    Нет причины использовать Mod Organizer 1 вместо Mod Organizer 2.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>LOOT</h3>
-                    LOOT doesn't really have any idea about your mods and their inner structure - it just orders them based on tags in a masterlist managed by volunteers, meaning that it's impossible to account for every single mod and combination of mods.
+                    LOOT на самом деле не знает о ваших модах и их внутренней структуре - он просто перемещает их на основе тегов из мастер-листа, который управляется коммьюнити. Это означает, что учесть каждый отдельный мод и все возможные комбинации модов невозможно.
                     <br>
-                    The main issue regarding LOOT in most Bethesda games is that its masterlists are often outdated or incomplete, leading to broken load orders that will cause mods to misbehave. Oblivion is an exception where LOOT tends to work more reliably.
+                    Основная проблема LOOT в большинстве игр Bethesda заключается в том, что его мастер-листы часто остаются устаревшими или неполными, что приводит к неправильному порядку загрузки, из-за которого моды работают некорректно. Исключением является Oblivion, где LOOT, как правило, работает более надежно.
                     </p>
 
                     <hr>
 
                     <p>
-                    <h3>Bashed Patches</h3>
-                    These patches have their use cases and in skilled hands can save a tremendous amount of time. It's not that they should be completely avoided period.
+                    <h3>Bashed патчи</h3>
+                    Эти патчи имеют свои случаи применения и в умелых руках могут сэкономить огромное количество времени. Дело не в том, что их нужно полностью избегать.
                     <br>
-                    However, like some of the other aforementioned tools, they are fully automated, and without the oversight of a human being they are liable to misidentify intentional overwrites as "conflicts" that need to be solved. For this reason, it's only recommended to use them if you are both capable and willing to comb over the resulting patch.
+                    Однако, как и некоторые другие упомянутые инструменты, они полностью автоматизированы, и без контроля со стороны пользователя они склонны неправильно понимать умышленные перезаписи как «конфликты», которые нужно решать. По этой причине рекомендуется использовать их только если вы способны и готовы тщательно проверить полученный патч.
                     <br>
-                    LOOT and Bash tags are unused by majority of the Fallout: New Vegas modding community, leading to complete breakage of the automated behavior of these mods.
+                    Теги Bash в LOOT не используются большинством сообщества моддинга Fallout: New Vegas, что приводит к полному нарушению автоматического поведения этих модов.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Mator Smash</h3>
-                    Outdated and produces broken patches. The only viable method of automated patching available is through a properly utilized Bashed Patch thanks to its sophisticated tagging system, which allows the user to customize how the generated patch handles individual records.
+                    Устарел и создает неработающие патчи. Единственный жизнеспособный метод автоматического создания патчей — это правильно настроенный Bashed Patch благодаря его тонкой системе тегов, которая позволяет пользователю настраивать обработку отдельных записей в создаваемом патче.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>zEdit/zClean</h3>
-                    Neither have any real advantages over <a href="https://moddinglinked.com/xedit.html" target="_blank">FNVEdit</a> and lack some essential features due to their outdated codebase. Support is also limited.
+                    Ни один из этих инструментов не имеет реальных преимуществ перед <a href="https://moddinglinked.com/xedit.html" target="_blank">FNVEdit</a> и уступает ему в ключевых функциях из-за устаревшей кодовой базы. Техническая поддержка также ограничена.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Merge Plugins Standalone/zMerge</h3>
-                    Automated merging can potentially cause major breakage in mods, especially heavily-scripted ones.
+                    Автоматическое объединение плагинов может привести к серьезным нарушениям в работе модов, особенно тех, которые содержат большое количество скриптов.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>FallrimTools Cleaning</h3>
-                    Cleaning save files with Resaver will only cause issues, there is nothing that needs to be done to save files with a functional setup.
+                    Очистка файлов сохранений с помощью Resaver вызовет только проблемы. При корректно настроенной игре не требуется никаких манипуляций с файлами сохранений.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Ordenador/DDSopt</h3>
-                    Breaks many textures by needlessly converting/adding/resizing alpha channels, cubemaps and mipmaps. Use <a href="https://www.nexusmods.com/fallout4/mods/63243" target="_blank">BSArch Pro</a> instead.
+                    Портит множество текстур, без необходимости преобразуя/добавляя/изменяя размер альфа-каналов, кубмапов и мипмапов. Вместо этого используйте <a href="https://www.nexusmods.com/fallout4/mods/63243" target="_blank">BSArch Pro</a>.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>New Vegas Configator</h3>
-                    Outdated and possibly dangerous. You won't need any INI tweaks other than the ones in the guide.
+                    Устарел и потенциально опасен. Вам не потребуются никакие изменения INI, кроме тех, что указаны в руководстве.
                     </p>
 
                     <hr>
 
                     <p>
                     <h3>Save Cleaner</h3>
-                    Works by going through your save file and deleting every REFR file, which will most likely break your save.
+                    Работает путем сканирования вашего файла сохранения и удаления каждой записи REFR, что, скорее всего, повредит ваше сохранение.
                     </p>
                 </div>
             </span>
